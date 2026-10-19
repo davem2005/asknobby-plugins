@@ -36,7 +36,7 @@ Terms: https://www.asknobby.com/terms
 
 The assistant reads the CV, asks for a LinkedIn URL, the titles, the work you want to spend your time doing, and limits for place, engagement, and pay. It asks which employers must never receive an application, including your current company. A day rate stays separate from an annual salary. You can keep two searches. A blocked employer is skipped on the daily run, the top five, and a named reference.
 
-A daily search is the usual choice. You can set it for up to 30 days, and a match from 50% to 95%. If you do not choose, it runs for 30 days and will auto-apply when at a 90% match. Place, engagement, pay, and the block list are checked before that. A one-time search shows up to five roles and applies only to the references you name.
+A daily search is the usual choice. You can set it for up to 30 days. If you do not choose a match, it applies at 95%. You can set that line from 90% to 95%. It will not apply below 90%. Place, engagement, pay, and the block list are checked before that. A one-time search shows up to five roles and applies only to the references you name. A short list refreshes on the daily run and submits nothing until you name a reference.
 
 Ask for your profile to see the saved search, the full profile summary, and the latest applications. You can withdraw one application. A CV a recruiter has already opened is not pulled back.
 
@@ -44,7 +44,7 @@ Ask for your profile to see the saved search, the full profile summary, and the 
 
 The assistant asks for the organisation name, the registered business name, the website, a phone number, and the company number when you have one. A missing phone does not stop the organisation. It shows a preview and creates the organisation only after you say yes. A company email domain that already has an organisation is not joined from the chat. An admin invites that inbox. A public inbox such as Gmail starts its own organisation.
 
-A role needs a complete definition. A thin role is refused. The reference has four groups of four, such as NBY-7K2Q-9ABC-DEFG-HJKM. Share it unchanged. An organisation can keep 10 open roles, 15 members, and 10 pending invites. A role can be closed and opened again. There is no tool to delete the organisation.
+A role needs a complete definition. A thin role is refused. If a piece is still missing, the assistant asks that question next and does not invent the answer. The reference has four groups of four, such as NBY-7K2Q-9ABC-DEFG-HJKM. Share it unchanged. An organisation can keep 10 open roles, 15 members, and 10 pending invites. A role can be closed and opened again. There is no tool to delete the organisation.
 
 ## Switching
 
