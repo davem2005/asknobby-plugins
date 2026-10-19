@@ -32,7 +32,7 @@ A result that lists a search, a role, or an application is drawn as a card when 
 
 The assistant reads the CV, asks for a LinkedIn URL, the titles, the work you want to spend your time doing, and limits for place, engagement, and pay. It asks which employers must never receive an application, including your current company. A day rate stays separate from an annual salary. You can keep two searches.
 
-A daily search is the usual choice. You can set it for up to 30 days, and a match from 50% to 95%. If you do not choose, it runs for 30 days and will auto-apply when at a 90% match. Place, engagement, pay, and the block list are checked before that. A one-time search shows up to five roles and applies only to the references you name.
+A daily search is the usual choice. You can set it for up to 30 days. If you do not choose a match, it applies at 95%. You can set that line from 90% to 95%. It will not apply below 90%. Place, engagement, pay, and the block list are checked before that. A one-time search shows up to five roles and applies only to the references you name.
 
 Ask for your profile to see the saved search, the full profile summary, and the latest applications. The card names the CV file. Ask to read the CV if you want the text.
 
