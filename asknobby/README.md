@@ -32,4 +32,4 @@ The plugin files do not contain a key or a token. Connecting opens the askNobby 
 
 The server at https://www.asknobby.com/api/mcp receives what the assistant sends for the tool you asked for. For a candidate, that includes the CV text, the original CV file when the assistant has it, the aim, titles, LinkedIn URL, location, engagement, and pay limits. For a recruiter, that includes the organisation details and the role text. When a role is scored, we send the aim, the titles, the CV text, and the work description to Jev at Wrangle. We do not send pay, place, or engagement to Jev. Those limits are checked in our own code. A submitted application shows the recruiting organisation the elevator pitch, the CV, and the match score.
 
-The privacy policy is at https://www.asknobby.com/privacy and the terms are at https://www.asknobby.com/terms.
+The guide is at https://www.asknobby.com/docs. The privacy policy is at https://www.asknobby.com/privacy and the terms are at https://www.asknobby.com/terms.
