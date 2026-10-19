@@ -2,7 +2,7 @@
   "name": "asknobby",
   "displayName": "askNobby",
   "version": "0.1.0",
-  "description": "Look for work or post a role from a conversation. askNobby signs you in with an emailed code, reads a CV, applies to roles you authorise, and lets a recruiting organisation publish a complete job.",
+  "description": "Look for work or post a role from a conversation. Click Connect, then give your name and email in the chat. askNobby reads a CV, applies to roles you authorise, and lets a recruiting organisation publish a complete job.",
   "author": {
     "name": "Stratustech Ltd",
     "url": "https://www.asknobby.com"
