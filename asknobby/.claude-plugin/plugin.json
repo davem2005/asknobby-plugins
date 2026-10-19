@@ -12,5 +12,6 @@
   "repository": "https://github.com/davem2005/asknobby-plugins",
   "privacyPolicyUrl": "https://www.asknobby.com/privacy",
   "termsOfServiceUrl": "https://www.asknobby.com/terms",
+  "documentationUrl": "https://www.asknobby.com/docs",
   "keywords": ["jobs", "recruiting", "applications", "cv"]
 }
