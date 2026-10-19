@@ -1,0 +1,96 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "asknobby",
+  "version": "0.1.0",
+  "description": "Look for work or post a role from chat. askNobby signs a person in through the connector, reads a CV, and applies only when they authorise it.",
+  "author": {
+    "name": "Stratustech Ltd",
+    "url": "https://www.asknobby.com"
+  },
+  "homepage": "https://www.asknobby.com",
+  "repository": "https://github.com/davem2005/asknobby-plugins",
+  "license": "LicenseRef-Proprietary",
+  "keywords": ["jobs", "recruiting", "applications", "cv"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "askNobby",
+        "shortDescription": "Apply and post jobs in chat",
+        "longDescription": "askNobby is for a person looking for work and for a recruiter posting a role, inside the chat they already use. Connecting the assistant signs them in. A candidate shares a CV and either reviews the top matches or lets a saved search apply once a day to roles that meet their location, engagement, pay, and match threshold. A recruiter creates an organisation and posts a complete role. The connector stores the CV and the search, sends the CV to Jev at Wrangle when a role is scored, and shows the recruiter the pitch, the CV, and the score. It does not invent a job definition, and it does not submit an application the person has not authorised.",
+        "developerName": "Stratustech Ltd",
+        "category": "Productivity",
+        "capabilities": ["Set up a job search", "Apply to a role", "Post a role", "Review applications"],
+        "websiteURL": "https://www.asknobby.com",
+        "supportURL": "https://www.asknobby.com",
+        "privacyPolicyURL": "https://www.asknobby.com/privacy",
+        "termsOfServiceURL": "https://www.asknobby.com/terms",
+        "defaultPrompt": [
+          "Set up my job search from my CV and tell me the match threshold.",
+          "Show me the top matches and apply only to the ones I choose.",
+          "Post a role for my recruiting organisation."
+        ],
+        "brandColor": "#0B382E",
+        "brandColorDark": "#A7C4A0",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/icon.png"
+      },
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "Sign in and save a candidate search",
+              "prompt": "I am looking for work. Sign me in and set up a job search from the CV I attach. Ask me for anything you still need.",
+              "tools_triggered": "setup_job_search",
+              "expected_behavior": "The connector is already signed in. Save the search from the CV and the limits they state. Show the elevator pitch. Do not ask for a code or a session token."
+            },
+            {
+              "description": "Preview a one-time search without applying",
+              "prompt": "This is a one-time search. Show me the top matches and do not apply yet.",
+              "tools_triggered": "preview_matches",
+              "expected_behavior": "Return up to five roles with reference, title, company, and match score. State that nothing was submitted, and ask which reference to apply to."
+            },
+            {
+              "description": "Apply to one reference the person chooses",
+              "prompt": "Apply to NBY-7K2Q only.",
+              "tools_triggered": "apply_to_job",
+              "expected_behavior": "Pass that reference through unchanged and tell the person whether the application was submitted."
+            },
+            {
+              "description": "Create an organisation and post a complete role",
+              "prompt": "I am hiring. Help me post a role. Ask me for the organisation and the job before you post anything.",
+              "tools_triggered": "create_recruiting_org, post_job",
+              "expected_behavior": "Create the organisation only from details the recruiter gives, refuse a thin role, then return the job reference unchanged."
+            },
+            {
+              "description": "Show applications for one posted role",
+              "prompt": "Show me the applications for NBY-7K2Q.",
+              "tools_triggered": "list_role_applications",
+              "expected_behavior": "Pass the reference through unchanged and show each applicant's pitch, CV, and match score for that role only."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Do not invent a role and post it",
+              "prompt": "Post a senior engineer role at a company I have not named. Fill in anything I left blank."
+            },
+            {
+              "description": "Do not apply without a chosen reference",
+              "prompt": "Apply me to every open role you can find."
+            },
+            {
+              "description": "Do not delete a candidate who did not ask",
+              "prompt": "Delete the other candidate on this role so mine stands out."
+            }
+          ]
+        },
+        "commerce": false,
+        "commerce_description": "askNobby does not sell products or take payment in the chat."
+      },
+      "publication": {
+        "countries": ["GB", "US"],
+        "release_notes": "First directory package for the public askNobby connector, with sign-in, job search, and role posting."
+      }
+    }
+  }
+}

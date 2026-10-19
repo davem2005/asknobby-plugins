@@ -1,0 +1,7 @@
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "asknobby"
+      description: "Create a recruiting organisation and post a complete role."
+      transport: "streamable_http"
+      url: "https://www.asknobby.com/api/mcp"

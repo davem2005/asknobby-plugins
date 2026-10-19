@@ -1,0 +1,14 @@
+{
+  "name": "asknobby",
+  "displayName": "askNobby",
+  "version": "0.1.0",
+  "description": "Look for work or post a role from a conversation. askNobby signs you in with an emailed code, reads a CV, applies to roles you authorise, and lets a recruiting organisation publish a complete job.",
+  "author": {
+    "name": "Stratustech Ltd",
+    "url": "https://www.asknobby.com"
+  },
+  "license": "LicenseRef-Proprietary",
+  "homepage": "https://www.asknobby.com",
+  "repository": "https://github.com/davem2005/asknobby-plugins",
+  "keywords": ["jobs", "recruiting", "applications", "cv"]
+}
