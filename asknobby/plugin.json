@@ -40,9 +40,9 @@
           "positive": [
             {
               "description": "Sign in and save a candidate search",
-              "prompt": "I am looking for work. Sign me in and set up a job search from the CV I attach. Ask me for anything you still need.",
+              "prompt": "I am looking for work. My name is Nobby Reviewer and my email is review.candidate@asknobby.com. Set up a job search from the CV I attach. Ask me for anything you still need.",
               "tools_triggered": "setup_job_search",
-              "expected_behavior": "The connector is already signed in. Save the search from the CV and the limits they state. Show the elevator pitch. Do not ask for a code or a session token."
+              "expected_behavior": "The connector is already signed in. Save Nobby Reviewer and review.candidate@asknobby.com, then save the search from the CV and the limits they state. Show the elevator pitch. Do not ask for a code, a link, or a session token."
             },
             {
               "description": "Preview a one-time search without applying",
@@ -58,9 +58,9 @@
             },
             {
               "description": "Create an organisation and post a complete role",
-              "prompt": "I am hiring. Help me post a role. Ask me for the organisation and the job before you post anything.",
+              "prompt": "I am hiring. Connect a new inbox. My name is Nobby Reviewer and my email is review.hiring@asknobby.com. Help me post a role. Ask me for the organisation and the job before you post anything.",
               "tools_triggered": "create_recruiting_org, post_job",
-              "expected_behavior": "Create the organisation only from details the recruiter gives, refuse a thin role, then return the job reference unchanged."
+              "expected_behavior": "Use a new connection, because review.candidate@asknobby.com is for looking for work. Save Nobby Reviewer and review.hiring@asknobby.com. Create the organisation only from details the recruiter gives, refuse a thin role, then return the job reference unchanged."
             },
             {
               "description": "Show applications for one posted role",
