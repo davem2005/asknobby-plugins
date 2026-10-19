@@ -1,0 +1,7 @@
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "asknobby"
+      description: "Show applications, preview matches, or apply to one reference."
+      transport: "streamable_http"
+      url: "https://www.asknobby.com/api/mcp"

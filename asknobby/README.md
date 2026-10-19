@@ -4,6 +4,20 @@ askNobby applies for a person who is looking for work, and lets a recruiter post
 
 ![askNobby monogram](./assets/icon.png)
 
+## Skills
+
+| Skill | When it is used |
+| --- | --- |
+| get-started | The person has just connected, or has not said whether they are looking for work or hiring |
+| find-work | Create a search, including a second search |
+| manage-search | Show, change, or delete a saved search |
+| manage-applications | Show what was submitted, preview matches, or apply to one reference |
+| post-a-role | Create an organisation and post a new role |
+| manage-roles | Show or change a posted role, or see who applied |
+| manage-organisation | Update the organisation, invites, and member scope |
+
+A company email can look for work or hire. The connection keeps the first capacity it is used for. A hiring connection cannot start a search. A job-search connection cannot start an organisation. The other capacity needs another inbox.
+
 ## Use it
 
 Connect the askNobby server, then tell the assistant you are looking for work or that you are hiring.
